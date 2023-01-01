@@ -24,6 +24,5 @@
 
 <p align="center">
 
-* *Sebuah game ular tangga yang dibumbui beberapa genre tambahan yang dimana si player*
-*disuruh untuk berpetualang dan menemukan sebuah rahasia, Di game ini player diminta untuk menyelesaikan ular tangga random dan mencari event tersembunyi.*
-* *Game ini berjudul Snake-O-Ladder, diambil dari sebuah tema di dunia layaknya salju, hutan, pantai dan gunung merapi.*
+*Game ini berjudul Snake-O-Ladder, Sebuah game ular tangga yang  dibumbui dengan beberapa genre tambahan dan latar tempat game ini ada di dunia lain yang memiliki 3 iklim sekaligus yaitu salju, hutan, dan pantai. yang dimana player dapat  berpetualang dengan menyelesaikan dungeon dengan iklim yang berbeda dan menemukan sebuah rahasia yang tersembunyi. Di dungeon ini player diminta untuk menyelesaikan suatu permainan ular tangga dan mencari event tersembunyi.*
+
