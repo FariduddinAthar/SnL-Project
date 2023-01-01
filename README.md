@@ -26,4 +26,4 @@
 
 * *Sebuah game ular tangga yang dibumbui beberapa genre tambahan yang dimana si player*
 *disuruh untuk berpetualang dan menemukan sebuah rahasia, Di game ini player diminta untuk menyelesaikan ular tangga random dan mencari event tersembunyi.*
-* *Game ini berjudul Little World, diambil dari sebuah tema di dunia layaknya salju, hutan, pantai dan gunung merapi.*
+* *Game ini berjudul Snake-O-Ladder, diambil dari sebuah tema di dunia layaknya salju, hutan, pantai dan gunung merapi.*
