@@ -12,7 +12,7 @@ public class dbKoneksi {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/Leaderboard",
                     "root",
-                    "127.0.0.1:3306");
+                    "");
             System.out.println("Connected");
     }   catch (ClassNotFoundException e){
         System.err.println("Driver error");
@@ -21,5 +21,4 @@ public class dbKoneksi {
     }
         return con;
     }
-    
 }
