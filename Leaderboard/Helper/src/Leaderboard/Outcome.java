@@ -12,25 +12,25 @@ public class Outcome {
     private Connection con;
     
     public Outcome(){
-        url = "jdbc:mysql://localhost/University";
+        url = "jdbc:mysql://localhost/Leaderboard";
         uname ="root";
         pass = "";
-        this.setConnection();
+        this.setConnectionAndStatement();
     }
     
-    private void setConnection(){
+    private void setConnectionAndStatement(){
         try {
             con = DriverManager.getConnection(url, url, pass);
             stmt = con.createStatement();
         } catch (SQLException ex) {
-            System.err.print(ex.getMessage());
+            System.err.print("Error inserting score:" + ex.getMessage());
             System.exit(1);
         }
     }
     
         public void SaveData(Player player){{
         try {
-            query = "INSERT INTO Student VALUES (NULL, '%s', '%s')";
+            query = "INSERT INTO Leaderboard VALUES (NULL, '%s', '%s', '%s')";
             query = String.format(
                 query,
                 Player.getId(),
@@ -45,23 +45,25 @@ public class Outcome {
         }
     }
     
-    public ArrayList<Player> getAll(){
-        ArrayList<Player> allPlayer = new ArrayList<>();
+    public ArrayList<Outcome> getAll(){
+        ArrayList<Outcome> allOutcome = new ArrayList<>();
         try {
             query = "SELECT * FROM Leaderboard";
             ResultSet rs = stmt.executeQuery(query);
             
             while(rs.next()){
-                allPlayer.add(new Player(
+                allOutcome.add(new Outcome(
+                        rs.getInt(1),
                         rs.getString(2),
-                        rs.getString(3))
+                        rs.getString(3),
+                        rs.getString(4))
                 );
             }
         } catch (SQLException ex){
-            System.err.print("Error getting data: " + ex.getMessage());
+            System.err.print("Error getting the score: " + ex.getMessage());
             System.exit(1);
         }
-        return allPlayer;
+        return allOutcome;
     }
     
 }
